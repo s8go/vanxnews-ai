@@ -1,0 +1,21 @@
+@import "variables";
+
+footer {
+  text-align: center;
+  background-color: $Primary;
+  padding: 3em;
+  margin-top: 2em;
+
+  h3 {
+    font-size: 1em;
+    font-weight: 500;
+    color: $Secondary;
+
+    a {
+      background-color: $Secondary;
+      color: $Primary;
+      text-decoration: none;
+      padding: 0.3em;
+    }
+  }
+}

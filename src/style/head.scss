@@ -1,0 +1,78 @@
+@import "variables";
+
+header {
+  padding-block: 2em;
+  padding-inline: 0.8em;
+}
+
+header .top {
+  @include Flex($dir: column);
+  // background-color: $Primary;
+  background-image: url("https://th.bing.com/th/id/OIP.utkeD7qId04GC_xiYtf_YQHaD6?pid=ImgDet&w=4096&h=2161&rs=1");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  height: 250px;
+  margin: auto;
+  color: $Secondary;
+  font-size: 1.5em;
+  border-radius: $Half_Radius;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+header .bottom {
+  @include Flex($dir: column);
+  margin-top: 1em;
+
+  @include Screen($mediumScreen) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .guide {
+    @include Flex($dir: column, $jus: space-between);
+
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin-block: 1em;
+    padding: 2em;
+    border-radius: $Half_Radius;
+    color: $White;
+
+    h5 {
+      font-size: 1.1em;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .instruction {
+      text-align: center;
+      p {
+        margin: 0.5em;
+        font-size: 0.8em;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+$myColors: (
+  "red": $Red,
+  "blue": $Blue,
+  "yellow": $Yellow,
+  "green": $Green,
+);
+
+@each $color in "red", "blue", "green", "yellow" {
+  .guide-#{$color} {
+    background-color: map-get($myColors, $color);
+  }
+}

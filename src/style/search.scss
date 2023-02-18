@@ -1,0 +1,64 @@
+@import "variables";
+
+.searchResult {
+  color: $White;
+
+  .head {
+    padding: 2em;
+    text-align: center;
+    font-size: 1.4em;
+    color: $Primary;
+  }
+
+  .article{
+    display: block;
+    width: 20%;
+    min-width: 250px;
+    // height: 400px;
+    cursor: pointer;
+    border-bottom-left-radius: $Half_Radius;
+    border-bottom-right-radius: $Half_Radius;
+    text-decoration: none;
+    margin: 2em;
+    padding-bottom: 1em;
+
+    .title {
+      font-size: 1.2em;
+      padding-top: 1em;
+      padding-inline: 0.5em;
+
+      span {
+        color: green;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+      padding-top: 0.4em;
+      padding-inline: 0.5em;
+      word-wrap: break-word;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .topics {
+    color: $Primary;
+    @include Flex;
+    
+    
+    .topic {
+      @extend .article;
+      box-shadow: 1px 7px 15px $Primary;
+    }
+
+    .current{
+      @extend .article;
+      background-color: red;
+    }
+  }
+}
