@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="top">
         <h1>Vanx</h1>
-        <p>Aided with Alan</p>
+        <p>Aided powered by AI</p>
       </div>
 
       <div className="bottom">
@@ -31,9 +31,9 @@ function Header() {
           <h5>To Get News By Categories</h5>
 
           <div className="instruction">
-            <h6>Different categories:</h6>
+            <p>Different categories:</p>
             <p className="order">
-              Technology, Sports, Entertainment, Science, General, Business,
+            General, Nation, Sports, Entertainment, Science, Business,
               Health
             </p>
           </div>
@@ -44,16 +44,7 @@ function Header() {
           </div>
         </div>
 
-        <div className="guide guide-blue">
-          <h5>To Get News on a Topic in a category</h5>
-
-          <div className="instruction">
-            <p className="try">Try saying:</p>
-            <p className="order">
-              Give me the latest news on Cristiano Ronaldo in Sports
-            </p>
-          </div>
-        </div>
+        
       </div>
     </header>
   );

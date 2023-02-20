@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
-$Primary: rgb(100, 0, 100);
+$Primary: rgb(172, 148, 172);
 $Secondary: rgb(233, 218, 233);
 $White: rgb(241, 241, 241);
 $Black: rgb(50, 0, 50);
+$Gray: rgb(96, 96, 96);
 
-$Red: rgb(114, 0, 0);
-$Blue: rgb(0, 0, 143);
-$Yellow: rgb(0, 121, 0);
-$Green: rgb(135, 135, 0);
+$Red: rgb(210, 171, 171);
+$Blue: rgb(163, 163, 204);
+$Yellow: rgb(142, 194, 142);
+$Green: rgb(198, 198, 143);
 
 $Half_Radius: 0.8em;
 $mediumScreen: 550px;
@@ -27,6 +28,7 @@ scroll-behavior: smooth;
 body {
   height: 100%;
   width: 100%;
+  
 }
 
 @mixin Flex($dir: row, $jus: center, $ali: center) {

@@ -7,57 +7,70 @@ header {
 
 header .top {
   @include Flex($dir: column);
-  // background-color: $Primary;
   background-image: url("https://th.bing.com/th/id/OIP.utkeD7qId04GC_xiYtf_YQHaD6?pid=ImgDet&w=4096&h=2161&rs=1");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  max-width: 500px;
-  height: 250px;
+  max-width: 400px;
+  height: 120px;
   margin: auto;
   color: $Secondary;
   font-size: 1.5em;
   border-radius: $Half_Radius;
+  box-shadow:3px 3px 5px $Black;
+
 
   h1 {
     font-size: 3em;
   }
 
   p {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 
 header .bottom {
-  @include Flex($dir: column);
+@include Flex();
   margin-top: 1em;
-
-  @include Screen($mediumScreen) {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+  grid-gap: .5em;
 
   .guide {
     @include Flex($dir: column, $jus: space-between);
 
+    @include Screen(870px){
+      width: 50%;
+      max-width: 300px;
+      height: 15em;
+      margin-inline: .5em;
+
+      h5 {
+        font-size: 1.2em !important;
+      }
+
+      p {
+        font-size: 1em !important;
+    }
+
+  }
+
     width: 100%;
-    max-width: 300px;
-    height: 300px;
-    margin-block: 1em;
-    padding: 2em;
+    min-width: 140px;
+    height: 8em;
+    padding: .4em;
     border-radius: $Half_Radius;
-    color: $White;
+    color: $Secondary;
+    margin-block: .3em;
 
     h5 {
-      font-size: 1.1em;
+      font-size: .8em;
       font-weight: 500;
       text-align: center;
     }
-
+    
     .instruction {
       text-align: center;
       p {
         margin: 0.5em;
-        font-size: 0.8em;
+        font-size: 0.6em;
         font-style: italic;
       }
     }
@@ -73,6 +86,8 @@ $myColors: (
 
 @each $color in "red", "blue", "green", "yellow" {
   .guide-#{$color} {
-    background-color: map-get($myColors, $color);
+    background-color: $Primary;
+    color: $Black !important;
+    box-shadow: 3px 3px 5px $Black;
   }
 }

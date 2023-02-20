@@ -1,0 +1,60 @@
+@import "variables";
+
+.profile {
+    @include Flex($dir:column);
+    padding: 2em;
+    min-height: 500px;
+    
+    .image {
+        display: block;
+        width: 100%;
+        box-shadow: 2px 2px 5px $Gray;
+        border-top-right-radius: 5em;
+        border-bottom-left-radius: 5em;    
+    }
+
+    .text{
+        width: 100%;
+        padding: 1em;
+
+        .intro{
+            margin-top: 1em;
+            font-weight: bold;
+        }
+    
+        .bio{
+            margin-top: 2em;
+        }
+    }
+
+    @include Screen(900px){
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .image{
+            width: 30%;
+        }
+
+        .text{
+            width: 50%;
+
+            .intro{
+                margin-top: 0em;
+            }
+        }
+    }
+}
+
+.socials{
+    @include Flex;
+    margin-top: 2em;
+
+
+   #{&} > a,img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-inline: .7em;
+        cursor: pointer;
+    }
+}
