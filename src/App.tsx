@@ -15,7 +15,7 @@ function App() {
     topic: string | undefined;
     current?: number;
     profile?: string;
-  }>({ data: undefined, topic: undefined, profile: "show profile"});
+  }>({ data: undefined, topic: undefined, profile: ""});
 
   useEffect(() => {
 
