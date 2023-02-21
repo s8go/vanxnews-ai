@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="top">
         <h1>Vanx</h1>
-        <p>Aided powered by AI</p>
+        <p>powered by AI</p>
       </div>
 
       <div className="bottom">
