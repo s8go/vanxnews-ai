@@ -9,6 +9,8 @@ To get Articles by certain topics/keywords, try saying things like : "Give me th
 
 To get articles by Categories : "Give me the latest news in sports" or "What's the latest news in science" and so on
 
+To open an article link : "open article 3" or "open article number 4"
+
 To go back to Homepage: "Go back" or "Back"
 
 Live Link: https://vanxnews.netlify.app
