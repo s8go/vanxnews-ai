@@ -42,6 +42,15 @@ function Header() {
             <p className="order">Give me the latest news in Entertainment</p>
           </div>
         </div>
+        
+        <div className="guide guide-green">
+          <h5>To Open an article's link</h5>
+
+          <div className="instruction">
+            <p className="try">Try saying:</p>
+            <p className="order">Open article 6</p>
+          </div>
+        </div>
 
         <div className="guide guide-yellow">
           <h5>To Open an article's link</h5>
