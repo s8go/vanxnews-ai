@@ -7,15 +7,14 @@ import Footer from "./components/Footer/Footer";
 import Profile from "./components/Profile/Profile";
 
 function App() {
-  // console.log(wordsToNumbers("five"))
   const alanKey: string =
     "d191f064bcdbcebf51ef83a983d7f7fe2e956eca572e1d8b807a3e2338fdd0dc/stage";
-  const [searchResults, setSearchResult] = useState<{
-    data: any[] | undefined;
-    topic: string | undefined;
-    current?: number;
-    profile?: string;
-  }>({ data: undefined, topic: undefined, profile: ""});
+    const [searchResults, setSearchResult] = useState<{
+      data: any[] | undefined;
+      topic: string | undefined;
+      current?: number;
+      profile?: string;
+    }>({ data: undefined, topic: undefined, profile: ""});
 
   useEffect(() => {
 
@@ -45,6 +44,7 @@ function App() {
           });
 
           setSearchResult({ data: result, topic, profile: "" });
+          window.localStorage.data = JSON.stringify(result)
         } else if (command === "highlight") {
           setSearchResult((curr) => {
             return { ...curr, current: article };
@@ -65,7 +65,6 @@ function App() {
     });
   }, []);
 
-  // console.log(searchResults.current);
 
   return (
     <div className={"head"}>

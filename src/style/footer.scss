@@ -2,7 +2,6 @@
 
 footer {
   text-align: center;
-  background-color: $Primary;
   padding: 3em;
   margin-top: 2em;
 
@@ -12,10 +11,20 @@ footer {
     color: $Black;
 
     a {
-      background-color: $Black;
-      color: $Secondary;
+      box-shadow: 0px 1px 1px 1px yellow;
+      color: yellow;
+      display:inline-block;
       text-decoration: none;
+  border-radius: 7px;
       padding: 0.3em;
+      transition: .5s;
+
+      &:hover {
+      box-shadow: 0px 1px 1px 1px rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+
+
+      }
     }
   }
 }
