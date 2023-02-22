@@ -21,7 +21,6 @@ const Article = ({ result }: Props) => {
     <>
       {result.data!.map((article, index) => {
         let date: Date = new Date(article.publishedAt);
-        console.log(date.toDateString() === new Date().toDateString())
         return (
           <a
             className={ "topic"}
