@@ -44,7 +44,6 @@ function App() {
           });
 
           setSearchResult({ data: result, topic, profile: "" });
-          window.localStorage.data = JSON.stringify(result)
         } else if (command === "highlight") {
           setSearchResult((curr) => {
             return { ...curr, current: article };
