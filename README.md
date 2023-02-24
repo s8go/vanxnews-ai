@@ -13,4 +13,6 @@ To open an article link : "open article 3" or "open article number 4"
 
 To go back to Homepage: "Go back" or "Back"
 
+TOOLS: React, Typescript and SASS
+
 Live Link: https://vanxnews.netlify.app
